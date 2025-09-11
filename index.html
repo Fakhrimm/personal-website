@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="emerald">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Overpass+Mono:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Slabo+27px&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="/src/style.css" />
   </head>
-  <body>
-    <nav>
-      <div class="navbar bg-base-100 font-sans">
+  <body class="pt-16">
+    <!-- Add padding for fixed navbar -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-transform duration-300 ease-in-out"
+    >
+      <div class="navbar bg-neutral font-sans text-neutral-content min-h-0 h-14">
         <div class="navbar-start pl-3">
-          <!-- Theme Toggle on the left -->
           <label class="swap swap-rotate">
             <input
               type="checkbox"
@@ -40,70 +44,275 @@
       </div>
     </nav>
 
-    <main class="container mx-auto p-10">
-      <section class="text-center my-8">
-        <h1 class="text-4xl font-bold mb-4">Fakhrimm</h1>
-        <!-- <p class="text-lg mb -4">A brief description about yourself.</p> -->
-      </section>
-
-      <section class="my-8">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit mattis, iaculis
-          mauris posuere, condimentum mi. Quisque vestibulum viverra ligula sit amet tincidunt.
-          Praesent condimentum tristique sapien eu tempor. Donec vel felis non dui convallis
-          malesuada in ut urna. Nam egestas metus in porta elementum.
-        </p>
-      </section>
-    </main>
-
-    <section class="w-full min-h-[50vh] bg-project-1 flex flex-col items-center justify-center">
-      <h1 class="text-3xl mb-4 text-project-1-content">WebGL 3D Rendering Engine</h1>
-      <p class="text-project-1-content">Web Development</p>
-    </section>
-
-    <section class="w-full min-h-[50vh] bg-base-100 flex flex-col items-center justify-center">
-      <main class="max-w-4xl mx-auto px-10 pt-20">
-        <video class="w-full h-auto aspect-video" autoplay loop muted playsinline>
-          <source src="/videos/sample1.mp4" type="video/mp4" />
-          <source src="/videos/sample1.mp4" type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
-      </main>
-      <main class="max-w-2xl mx-auto px-10">
-        <section class="my-8">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit mattis, iaculis
-            mauris posuere, condimentum mi. Quisque vestibulum viverra ligula sit amet tincidunt.
-            Praesent condimentum tristique sapien eu tempor. Donec vel felis non dui convallis
-            malesuada in ut urna. Nam egestas metus in porta elementum.
-          </p>
+    <main>
+      <section class="w-full min-h-[65vh] bg-base-100 flex flex-col items-center justify-center">
+        <section class="container mx-auto p-4">
+          <div class="text-center my-8">
+            <h1 class="text-4xl font-bold mb-4">Fakhrimm</h1>
+          </div>
+          <div class="my-8">
+            <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit mattis,
+              iaculis mauris posuere, condimentum mi. Quisque vestibulum viverra ligula sit amet
+              tincidunt. Praesent condimentum tristique sapien eu tempor. Donec vel felis non dui
+              convallis malesuada in ut urna. Nam egestas metus in porta elementum.
+            </p>
+          </div>
         </section>
-        <div class="text-center">
-          <button
-            class="btn btn-outline border-[0.5px] font-thin hover:bg-project-1 hover:text-project-1-content"
-          >
-            Visit Website
-          </button>
-        </div>
-        <!-- <button class="btn btn-outline mx-auto block">Default</button> -->
-      </main>
-    </section>
-
-    <main class="container mx-auto p-4">
-      <section class="my-8">
-        <h2 class="text-2xl font-semibold mb-4">Wor</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non velit mattis, iaculis
-          mauris posuere, condimentum mi. Quisque vestibulum viverra ligula sit amet tincidunt.
-          Praesent condimentum tristique sapien eu tempor. Donec vel felis non dui convallis
-          malesuada in ut urna. Nam egestas metus in porta elementum.
-        </p>
       </section>
-      <section class="my-8">
-        <h2 class="text-2xl font-semibold mb-4">Work</h2>
-        <p>Describe your professional experience, projects, or anything related to your work.</p>
+
+      <section class="w-full min-h-[65vh] bg-project-1 flex flex-col items-center justify-center">
+        <h1 class="mb-4 text-project-1-content">WebGL 3D Rendering Engine</h1>
+        <h2 class="text-project-1-content">WebGL React Typescript GLSL</h2>
+      </section>
+
+      <section
+        class="w-full min-h-[60vh] bg-base-100 flex flex-col items-center justify-center py-14"
+      >
+        <div class="w-[90%] max-w-4xl mx-auto">
+          <video class="w-full h-auto aspect-video" autoplay loop muted playsinline>
+            <source src="/videos/01-web-gl.mp4" type="video/mp4" />
+            <source src="/videos/01-web-gl.mp4" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="w-[90%] max-w-2xl mx-auto">
+          <div class="my-8 font-serif">
+            <p>
+              A comprehensive <strong>WebGL-based 3D rendering engine</strong> built from scratch
+              using TypeScript and React.
+            </p>
+
+            <br />
+
+            <p><strong>Core Features</strong></p>
+            <ul class="list-disc list-outside space-y-2 pl-4 text-[1.1rem]">
+              <li>
+                Advanced lighting models with Phong shading, multiple projection systems
+                (perspective/orthographic/oblique)
+              </li>
+              <li>
+                Texture mapping with parallax effects and real-time animation with custom keyframe
+                interpolation
+              </li>
+              <li>Custom GLSL shaders for realistic rendering effects</li>
+              <li>Efficient resource management and optimization techniques</li>
+              <li>Modular architecture for easy extension and maintenance</li>
+            </ul>
+
+            <br />
+
+            <p>
+              <strong>Technical Stack:</strong> Built with WebGL for low-level graphics rendering,
+              React for the user interface, and custom GLSL shaders for lighting effects.
+            </p>
+          </div>
+          <div class="text-center pt-4git">
+            <!-- <button class="btn-cust-link">Visit Github</button> -->
+            <a href="https://github.com/Fakhrimm/webgl-3d-rendering-engine" target="_blank"
+              ><button class="btn-cust-link">Visit Website</button></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="w-full min-h-[65vh] bg-project-2 flex flex-col items-center justify-center">
+        <h1 class="mb-4 text-project-1-content">Raft Protocol Implementation</h1>
+        <h2 class="text-project-1-content">Go Distributed System</h2>
+      </section>
+
+      <section
+        class="w-full min-h-[60vh] bg-base-100 flex flex-col items-center justify-center py-14"
+      >
+        <div class="w-[90%] max-w-4xl mx-auto">
+          <video class="w-full h-auto aspect-video" autoplay loop muted playsinline>
+            <source src="/videos/02-raft-protocol.mp4" type="video/mp4" />
+            <source src="/videos/02-raft-protocol.mp4" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="w-[90%] max-w-2xl mx-auto">
+          <div class="my-8 font-serif">
+            <p>
+              A distributed systems implementation of the <strong>Raft consensus algorithm</strong>
+              built with Go (Golang) and gRPC for reliable leader election and log replication.
+            </p>
+
+            <br />
+
+            <p><strong>Core Features</strong></p>
+            <ul class="list-disc list-outside space-y-2 pl-4 text-[1.1rem]">
+              <li>
+                Complete Raft consensus implementation with leader election, log replication, and
+                fault tolerance mechanisms
+              </li>
+              <li>
+                Distributed node communication using gRPC and Protocol Buffers for high-performance
+                message serialization
+              </li>
+              <li>
+                Automated cluster management with controller service for node orchestration and
+                monitoring
+              </li>
+              <li>
+                Strong consistency guarantees and partition tolerance in distributed environments
+              </li>
+              <li>
+                Comprehensive testing framework with multi-node simulation and network partition
+                scenarios
+              </li>
+            </ul>
+
+            <br />
+
+            <p>
+              <strong>Technical Stack:</strong> Built with Go for concurrent programming, gRPC for
+              inter-service communication, Protocol Buffers for data serialization, and PowerShell
+              scripts for automated deployment and testing.
+            </p>
+          </div>
+          <div class="text-center pt-4git">
+            <!-- <button class="btn-cust-link">Visit Github</button> -->
+            <a
+              href="https://github.com/Fakhrimm/raft-consensus-algorithm-implementation"
+              target="_blank"
+              ><button class="btn-cust-link">Visit Website</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full min-h-[65vh] bg-project-2 flex flex-col items-center justify-center">
+        <h1 class="mb-4 text-project-1-content">Raft Protocol Implementation</h1>
+        <h2 class="text-project-1-content">Go Distributed System</h2>
+      </section>
+      <section
+        class="w-full min-h-[60vh] bg-base-100 flex flex-col items-center justify-center py-14"
+      >
+        <div class="w-[90%] max-w-4xl mx-auto">
+          <video class="w-full h-auto aspect-video" autoplay loop muted playsinline>
+            <source src="/videos/03-tcp.mp4" type="video/mp4" />
+            <source src="/videos/03-tcp.mp4" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="w-[90%] max-w-2xl mx-auto">
+          <div class="my-8 font-serif">
+            <p>
+              A distributed systems implementation of the <strong>Raft consensus algorithm</strong>
+              built with Go (Golang) and gRPC for reliable leader election and log replication.
+            </p>
+
+            <br />
+
+            <p><strong>Core Features</strong></p>
+            <ul class="list-disc list-outside space-y-2 pl-4 text-[1.1rem]">
+              <li>
+                Complete Raft consensus implementation with leader election, log replication, and
+                fault tolerance mechanisms
+              </li>
+              <li>
+                Distributed node communication using gRPC and Protocol Buffers for high-performance
+                message serialization
+              </li>
+              <li>
+                Automated cluster management with controller service for node orchestration and
+                monitoring
+              </li>
+              <li>
+                Strong consistency guarantees and partition tolerance in distributed environments
+              </li>
+              <li>
+                Comprehensive testing framework with multi-node simulation and network partition
+                scenarios
+              </li>
+            </ul>
+
+            <br />
+
+            <p>
+              <strong>Technical Stack:</strong> Built with Go for concurrent programming, gRPC for
+              inter-service communication, Protocol Buffers for data serialization, and PowerShell
+              scripts for automated deployment and testing.
+            </p>
+          </div>
+          <div class="text-center pt-4git">
+            <!-- <button class="btn-cust-link">Visit Github</button> -->
+            <a
+              href="https://github.com/Fakhrimm/raft-consensus-algorithm-implementation"
+              target="_blank"
+              ><button class="btn-cust-link hover:bg-project-2">Visit Website</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full min-h-[65vh] bg-project-3 flex flex-col items-center justify-center">
+        <h1 class="mb-4 text-project-1-content">TCP-like Protocol Implementation</h1>
+        <h2 class="text-project-1-content">Python Network Programming</h2>
+      </section>
+      <section
+        class="w-full min-h-[60vh] bg-base-100 flex flex-col items-center justify-center py-14"
+      >
+        <div class="w-[90%] max-w-4xl mx-auto">
+          <video class="w-full h-auto aspect-video" autoplay loop muted playsinline>
+            <source src="/videos/03-tcp.mp4" type="video/mp4" />
+            <source src="/videos/03-tcp.mp4" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="w-[90%] max-w-2xl mx-auto">
+          <div class="my-8 font-serif">
+            <p>
+              A custom <strong>reliable transport protocol</strong> implementation that provides
+              TCP-like reliability guarantees over UDP sockets for efficient file transfer between
+              server and multiple clients.
+            </p>
+
+            <br />
+
+            <p><strong>Core Features</strong></p>
+            <ul class="list-disc list-outside space-y-2 pl-4 text-[1.1rem]">
+              <li>
+                TCP-like reliability mechanisms over UDP including packet sequencing,
+                acknowledgments, and retransmission for guaranteed data delivery
+              </li>
+              <li>
+                Multi-client file distribution system with concurrent connection handling and
+                parallel processing capabilities
+              </li>
+              <li>
+                Advanced error correction using Hamming codes (ECC) for automatic error detection
+                and correction during transmission
+              </li>
+              <li>
+                Optimized memory management for handling large files and multiple simultaneous
+                connections efficiently
+              </li>
+              <li>
+                Bidirectional communication with metadata transfer and cross-network file sharing
+                support
+              </li>
+            </ul>
+
+            <br />
+
+            <p>
+              <strong>Technical Stack:</strong> Built with Python 3 using only standard library
+              components, implementing custom transport layer protocols, socket programming, and
+              concurrent processing techniques.
+            </p>
+          </div>
+          <div class="text-center pt-4">
+            <!-- <button class="btn-cust-link">Visit Github</button> -->
+            <a href="https://github.com/Fakhrimm/tcp-like-protocol-over-udp" target="_blank"
+              ><button class="btn-cust-link hover:bg-project-3">Visit Website</button></a
+            >
+          </div>
+        </div>
       </section>
     </main>
+
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
