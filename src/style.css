@@ -9,6 +9,7 @@
   --color-project-2: #3e445c;
   --color-project-3: #5b7a78;
   --color-project-4: #5e437b;
+  --color-project-5: #000000;
   --color-project-1-content: oklch(98.462% 0.001 247.838);
 }
 
@@ -42,6 +43,9 @@
   }
   .btn-cust-link-4 {
     @apply btn px-12 py-7 btn-outline border-[1.1px] font-light text-sm hover:bg-project-4 hover:text-project-1-content text-project-4 outline-project-4;
+  }
+  .btn-cust-link-5 {
+    @apply btn px-12 py-7 btn-outline border-[1.1px] font-light text-sm hover:bg-project-5 hover:text-project-1-content text-project-5 outline-project-5;
   }
 }
 
