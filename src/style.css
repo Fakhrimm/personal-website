@@ -4,10 +4,11 @@
 @theme {
   --font-sans: 'Jetbrains Mono', sans-serif;
   --font-serif: 'Playfair Display', serif;
-  --color-project-1: oklch(8.467% 0.00001 271.152);
+  --color-project-1: oklch(28.908% 0.00003 271.152);
   /* --color-project-2: #1e1f2e; */
   --color-project-2: #3e445c;
   --color-project-3: #5b7a78;
+  --color-project-4: #5e437b;
   --color-project-1-content: oklch(98.462% 0.001 247.838);
 }
 
@@ -38,6 +39,9 @@
   }
   .btn-cust-link-3 {
     @apply btn px-12 py-7 btn-outline border-[1.1px] font-light text-sm hover:bg-project-3 hover:text-project-1-content text-project-3 outline-project-3;
+  }
+  .btn-cust-link-4 {
+    @apply btn px-12 py-7 btn-outline border-[1.1px] font-light text-sm hover:bg-project-4 hover:text-project-1-content text-project-4 outline-project-4;
   }
 }
 
